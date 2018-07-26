@@ -8,14 +8,20 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Platzi-Squear';
-  a = 3;
-  b = 5;
-  listo = false;
+  lugares:any = [
+    {active: true, nombre: "floreria la flor"},
+    {active: true, nombre: "Jugueteria el juguete"},
+    {active: false, nombre: "Zapateria el zapato"},
+    {active: true, nombre: "Gomeria la goma"},
+    {active: true, nombre: "floreria la flor"},
+    {active: true, nombre: "Jugueteria el juguete"},
+    {active: true, nombre: "Zapateria el zapato"},
+    {active: true, nombre: "Gomeria la goma"}
+  ];
+  lat:number = -27.448712;
+  lng:number = -58.996193;
   constructor () {
-    setTimeout(()=> {this.listo=true},3000)
   }
 
-  hacerAlgo() {
-    alert('Haciendo algo');
-  }
+
 }

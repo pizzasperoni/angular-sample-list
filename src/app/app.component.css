@@ -1,0 +1,15 @@
+agm-map {
+  height: 300px;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+.lista {
+  font-size:25px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
