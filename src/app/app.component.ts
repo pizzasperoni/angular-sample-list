@@ -5,6 +5,17 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'app';
+  title = 'Platzi-Squear';
+  a = 3;
+  b = 5;
+  listo = false;
+  constructor () {
+    setTimeout(()=> {this.listo=true},3000)
+  }
+
+  hacerAlgo() {
+    alert('Haciendo algo');
+  }
 }
