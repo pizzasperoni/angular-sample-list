@@ -1,8 +1,6 @@
 agm-map {
   height: 300px;
   width: 400px;
+  margin: 0;
 }
-.lista {
-  font-size: 18px;
-  list-style-type: none
-}
+

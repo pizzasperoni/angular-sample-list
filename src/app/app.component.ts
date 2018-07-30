@@ -14,8 +14,7 @@ export class AppComponent {
     {plan:'pagado',cercania: 2, distancia: 4, active: true, nombre:"Gomeria la goma"},
     {plan:'pagado',cercania: 1, distancia: 2, active: true, nombre:"Relojeria el reloj"},
     {plan:'gratuito',cercania: 3, distancia: 10, active: true, nombre:"Chapa y pintura la chapa"},
-    {plan: 'gratuito',cercania: 3, distancia: 20, active: true, nombre:"La oficina de globant"},
-    {plan:'pagado',cercania: 3, distancia: 40, active: true, nombre:"Y la re concha de tu vieja"},
+    {plan: 'gratuito',cercania: 3, distancia: 20, active: true, nombre:"La oficina de globant"}
   ];
 
   lat:number = -27.448712;

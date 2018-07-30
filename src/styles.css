@@ -1,12 +1,2 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Lato;
-  font-weight: normal;
-}
-.numero_par {
-  background-color: aliceblue;
-  color: blue;
-}
+
