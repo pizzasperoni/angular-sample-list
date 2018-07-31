@@ -27,6 +27,6 @@ export class DetalleComponent {
   }
 
   buscarLugar(){
-    return this.lugares.filter((lugar)=> {return lugar.id ==this.id}) [0] || null
+    return this.lugares.filter((lugar)=> {return lugar.id == this.id}) [0] || null
   }
 }
