@@ -1,0 +1,21 @@
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+}
+.info-contacto h3 {
+  font-size: 30px;
+}
+.info-contacto p {
+  font-size: 23px;
+}
+
+.contact-icon {
+  font-size: 100px;
+  padding: 10px;
+}
+.formulario {
+  padding-top: 10vh;
+}
