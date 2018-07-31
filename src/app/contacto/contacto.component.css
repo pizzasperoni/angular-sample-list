@@ -5,6 +5,9 @@
   align-items: center;
   font-weight: normal;
 }
+.info-contacto h2 {
+  font-size: 70px;
+}
 .info-contacto h3 {
   font-size: 30px;
 }
