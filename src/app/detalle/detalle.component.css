@@ -1,3 +1,16 @@
-a {
-  font-size: 30px;
+.description {
+  padding: 10px;
+  color: #283E4A;
+  font-size: 20px;
+  background-color: white;
+  width: 50%;
+  border-radius: 7px;
+  font-weight: normal;
+}
+.container p {
+  font-size: 20px;
+}
+.container small {
+  font-size: 17px;
+  font-weight: bold;
 }

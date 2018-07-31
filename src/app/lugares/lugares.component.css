@@ -2,4 +2,19 @@ agm-map {
   height: 300px;
   margin: 0;
 }
+.list-group-item {
+  text-decoration: none;
+  background-color: rgb(239, 240, 243);
+  color: #283E4A;
+}
 
+.list-group-item:hover  {
+  text-decoration-color: none;
+  background-color: #026092;
+  color: white;
+  transition: background-color 0.4s ease-out;
+}
+.list-group-item:link {
+  text-decoration: none;
+  color: #283E4A;
+}
