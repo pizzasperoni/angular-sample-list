@@ -11,10 +11,12 @@ import { LugaresComponent } from './lugares/lugares.component'
 import { ContactoComponent } from './contacto/contacto.component'
 import { LugaresService } from './services/lugares.service';
 
-import { AngularFireModule } from 'angularfire2';
+import { AngularFireModule } from 'angularfire2'
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { CrearComponent } from './crear/crear.component'
+
 import { FormsModule } from '@angular/forms';
 
 // Rutas
@@ -28,11 +30,11 @@ const appRoutes: Routes= [
 ]
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyCqeUChvHUkstFXzhgABfG6PAYMMXpa61w",
-  authDomain: "acme-f320f.firebaseapp.com",
-  databaseURL: "https://acme-f320f.firebaseio.com",
-  storageBucket: "acme-f320f.appspot.com",
-  messagingSenderId: '331454250505'
+  apiKey: "AIzaSyBR6oV0PWYxaSCFu6uFUh109GiQ3fnXrLk",
+  authDomain: "acme-platzi.firebaseapp.com",
+  databaseURL: "https://acme-platzi.firebaseio.com",
+  storageBucket: "acme-platzi.appspot.com",
+  messagingSenderId: "615828602895"
 }
 
 @NgModule({
@@ -54,9 +56,14 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    FormsModule
+    FormsModule,
+    AngularFirestoreModule,
+    AngularFireDatabaseModule,
+    AngularFireModule,
+    AngularFireAuthModule
   ],
   providers: [LugaresService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
