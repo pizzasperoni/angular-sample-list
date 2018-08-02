@@ -30,11 +30,7 @@ const appRoutes: Routes= [
 ]
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyBR6oV0PWYxaSCFu6uFUh109GiQ3fnXrLk",
-  authDomain: "acme-platzi.firebaseapp.com",
-  databaseURL: "https://acme-platzi.firebaseio.com",
-  storageBucket: "acme-platzi.appspot.com",
-  messagingSenderId: "615828602895"
+  // your firebase config
 }
 
 @NgModule({
