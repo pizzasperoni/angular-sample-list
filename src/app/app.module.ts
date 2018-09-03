@@ -10,10 +10,10 @@ import { DetalleComponent } from './detalle/detalle.component'
 import { LugaresComponent } from './lugares/lugares.component'
 import { ContactoComponent } from './contacto/contacto.component'
 import { LugaresService } from './services/lugares.service';
-
+import { environment } from '../environments/environment';
+import { AngularFireDatabaseModule } from'angularfire2/database';
 import { AngularFireModule } from 'angularfire2'
 import { AngularFirestoreModule } from 'angularfire2/firestore';
-import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { CrearComponent } from './crear/crear.component'
 
@@ -26,12 +26,7 @@ const appRoutes: Routes= [
   {path:'contacto', component: ContactoComponent},
   {path:'detalle/:id', component: DetalleComponent},
   {path:'crear', component: CrearComponent}
-
 ]
-
-export const firebaseConfig = {
-  // your firebase config
-}
 
 @NgModule({
   declarations: [
@@ -46,17 +41,14 @@ export const firebaseConfig = {
   imports: [
   BrowserModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAURlDHbpPGrbw43f4BO26ACoCBUryV4B8'
+      apiKey: 'AIzaSyBlQz8r7fGvSOJ2BM9W2ygebI3eUJxEV1I'
     }),
     RouterModule.forRoot(appRoutes),
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     FormsModule,
-    AngularFirestoreModule,
-    AngularFireDatabaseModule,
-    AngularFireModule,
-    AngularFireAuthModule
+    AngularFirestoreModule
   ],
   providers: [LugaresService],
   bootstrap: [AppComponent]

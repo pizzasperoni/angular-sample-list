@@ -13,7 +13,9 @@ export class CrearComponent {
   constructor (private lugaresService: LugaresService) {
 
   }
-  guardarLugar() {
-    this.lugaresService.guardarLugar(this.lugar)
+  id:string = 'ZGDPrUMZieqpqcTdrXQO';
+  buscarLugar() {
+    console.log(this.id)
+    console.log(this.lugaresService.buscarLugar(this.id))
   }
 }

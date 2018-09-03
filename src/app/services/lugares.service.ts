@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from "rxjs";
 
 
 @Injectable()
@@ -19,12 +20,15 @@ export class LugaresService {
   public getLugares() {
     return this.lugares
   }
+  items:any ={}
   public buscarLugar(id) {
-    return this.lugares.filter((lugar)=> {return lugar.id == id}) [0] || null
+
+    //let lugarInDb = this.afDB.list('lugares').filter((lugar)=> {return lugar.id == id}) [0] || 'No existe'
+    //return lugarInDb
   }
   public guardarLugar(lugar) {
     console.log(lugar)
-    this.afDB.database.ref('lugares/1').set(lugar)
+    this.afDB.list('lugares').push(lugar)
   }
 
 }
